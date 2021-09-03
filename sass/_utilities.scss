@@ -1,0 +1,28 @@
+.label {
+  font-size: $font-labels;
+  color: $color-dark-cyan-1;
+  margin-block: 0.5rem;
+}
+
+.field {
+  font-size: $font-input;
+  font-family: inherit;
+  font-weight: 700;
+  color: $color-dark-cyan;
+  width: 100%;
+  padding: 0.3rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: $color-light-cyan-2;
+}
+
+.tip {
+  font-size: $font-input;
+  font-family: inherit;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}

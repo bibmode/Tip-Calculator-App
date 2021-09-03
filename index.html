@@ -12,9 +12,63 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="sass/main.css" />
+
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
+    <main class="container">
+      <figure class="logo"></figure>
+      <div class="app">
+        <div class="left">
+          <h3 class="input__label label">Bill</h3>
+          <input type="text" id="user-input" class="input__field field" />
+
+          <div class="tips">
+            <h3 class="tips__label label">Select Tip %</h3>
+
+            <div class="tips__container">
+              <button class="tips__option--green tip">5%</button>
+              <button class="tips__option--green tip">10%</button>
+              <button class="tips__option--cyan tip">15%</button>
+              <button class="tips__option--green tip">25%</button>
+              <button class="tips__option--green tip">50%</button>
+              <input
+                type="text"
+                class="tips__custom tips__option--custom tip"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+
+          <div class="people">
+            <h3 class="people__label label">Number of People</h3>
+            <input type="text" class="people__field field" />
+          </div>
+        </div>
+
+        <div class="right">
+          <h3 class="amount__label">
+            Tip Amount <span class="amount__label--span">/ person</span>
+          </h3>
+          <h2 class="amount__number">$4.27</h2>
+          <h3 class="total__label">
+            Total <span class="total__label--span">/ person</span>
+          </h3>
+          <h2 class="total__number">$32.79</h2>
+
+          <button class="reset">reset</button>
+        </div>
+      </div>
+    </main>
+
     <!-- Bill
 
   Select Tip %

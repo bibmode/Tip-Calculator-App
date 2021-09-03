@@ -1,0 +1,63 @@
+////////////////////////////////////////
+// LEFT
+
+.left {
+  padding: 3rem 3.5rem;
+}
+
+.input {
+  &__label {
+  }
+
+  &__field {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.tips {
+  &__label {
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    grid-gap: 1.2rem;
+    margin-block: 1.2rem;
+  }
+
+  &__option {
+    &--green {
+      background-color: $color-dark-cyan;
+      color: $color-white;
+    }
+
+    &--cyan {
+      background-color: $color-strong-cyan;
+      color: $color-dark-cyan;
+    }
+
+    &--custom {
+      background-color: $color-light-cyan-2;
+      color: $color-dark-cyan-1;
+    }
+  }
+
+  &__custom {
+  }
+}
+
+.people {
+  margin-top: 2.5rem;
+  &__label {
+  }
+
+  &__field {
+  }
+}
+
+////////////////////////////////////////
+// RIGHT
+
+.right {
+}

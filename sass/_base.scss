@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  font-family: $font-family-main;
+  line-height: 1.6;
+  background-color: $color-light-cyan-1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

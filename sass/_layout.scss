@@ -1,0 +1,13 @@
+.container {
+  background-color: orangered;
+  height: 100vh;
+  width: max-content;
+
+  display: flex;
+  align-items: center;
+}
+
+.app {
+  background-color: $color-white;
+  border-radius: 2rem;
+}

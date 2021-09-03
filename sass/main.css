@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  font-family: "Space Mono", monospace;
+  line-height: 1.6;
+  background-color: #c5e4e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  background-color: orangered;
+  height: 100vh;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app {
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.left {
+  padding: 3rem 3.5rem;
+}
+
+.input__field {
+  margin-bottom: 2.5rem;
+}
+
+.tips__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (min-content)[2];
+      grid-template-rows: repeat(2, -webkit-min-content);
+      grid-template-rows: repeat(2, min-content);
+  grid-gap: 1.2rem;
+  margin-block: 1.2rem;
+}
+
+.tips__option--green {
+  background-color: #00494d;
+  color: white;
+}
+
+.tips__option--cyan {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.tips__option--custom {
+  background-color: #f4fafa;
+  color: #5e7a7d;
+}
+
+.people {
+  margin-top: 2.5rem;
+}
+
+.label {
+  font-size: 1.4rem;
+  color: #5e7a7d;
+  margin-block: 0.5rem;
+}
+
+.field {
+  font-size: 2.4rem;
+  font-family: inherit;
+  font-weight: 700;
+  color: #00494d;
+  width: 100%;
+  padding: 0.3rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #f4fafa;
+}
+
+.tip {
+  font-size: 2.4rem;
+  font-family: inherit;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
