@@ -66,10 +66,11 @@ body {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  overflow: hidden;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (calc((100% / 3) - (1.2rem * 2)))[3];
-      grid-template-columns: repeat(3, calc((100% / 3) - (1.2rem * 2)));
+  -ms-grid-columns: (calc((100% / 3) - (1.3rem * 2)))[3];
+      grid-template-columns: repeat(3, calc((100% / 3) - (1.3rem * 2)));
   -ms-grid-rows: (min-content)[2];
       grid-template-rows: repeat(2, -webkit-min-content);
       grid-template-rows: repeat(2, min-content);
@@ -77,6 +78,10 @@ body {
   margin-block: 1.2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.tips__container > * {
+  font-size: 2.4rem;
 }
 
 .tips__option--green {
@@ -99,6 +104,55 @@ body {
   width: 100%;
 }
 
+.right {
+  background-color: #00494d;
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3rem;
+  margin-left: 0;
+  border-radius: 1.8rem;
+  padding: 2.5rem 3.5rem;
+}
+
+.results {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content 1fr;
+      grid-template-columns: -webkit-max-content 1fr;
+      grid-template-columns: max-content 1fr;
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.amount__label {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.amount__label--span {
+  color: #7f9c9f;
+}
+
+.amount__number {
+  color: #26c0ab;
+  text-align: right;
+  font-size: 3.5rem;
+}
+
+.reset {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: auto;
+}
+
 .label {
   font-size: 1.4rem;
   color: #5e7a7d;
@@ -119,7 +173,6 @@ body {
 }
 
 .tip {
-  font-size: 2.4rem;
   font-family: inherit;
   font-weight: 700;
   outline: none;

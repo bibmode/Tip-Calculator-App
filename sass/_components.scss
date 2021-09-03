@@ -21,12 +21,17 @@
 
   &__container {
     width: min-content;
+    overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(3, calc((100% / 3) - (1.2rem * 2)));
+    grid-template-columns: repeat(3, calc((100% / 3) - (1.3rem * 2)));
     grid-template-rows: repeat(2, min-content);
     grid-gap: 1.2rem;
     margin-block: 1.2rem;
     box-sizing: border-box;
+
+    & > * {
+      font-size: $font-input;
+    }
   }
 
   &__option {
@@ -64,4 +69,41 @@
 // RIGHT
 
 .right {
+  background-color: $color-dark-cyan;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  margin-left: 0;
+  border-radius: 1.8rem;
+  padding: 2.5rem 3.5rem;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+.amount {
+  &__label {
+    color: $color-white;
+    font-size: 1.4rem;
+    &--span {
+      color: $color-dark-cyan-2;
+    }
+  }
+
+  &__number {
+    color: $color-strong-cyan;
+    text-align: right;
+    font-size: 3.5rem;
+  }
+}
+
+.reset {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: auto;
 }
