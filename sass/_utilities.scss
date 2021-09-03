@@ -25,4 +25,8 @@
   border: none;
   border-radius: 5px;
   text-align: center;
+
+  /* &:not(:last-child) {
+    padding-inline: 3rem;
+  } */
 }

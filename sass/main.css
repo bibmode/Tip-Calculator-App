@@ -32,9 +32,6 @@ body {
 .container {
   background-color: orangered;
   height: 100vh;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,11 +41,20 @@ body {
 }
 
 .app {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   background-color: white;
   border-radius: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
 }
 
 .left {
+  width: 30vw;
   padding: 3rem 3.5rem;
 }
 
@@ -57,15 +63,20 @@ body {
 }
 
 .tips__container {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (calc((100% / 3) - (1.2rem * 2)))[3];
+      grid-template-columns: repeat(3, calc((100% / 3) - (1.2rem * 2)));
   -ms-grid-rows: (min-content)[2];
       grid-template-rows: repeat(2, -webkit-min-content);
       grid-template-rows: repeat(2, min-content);
   grid-gap: 1.2rem;
   margin-block: 1.2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .tips__option--green {
@@ -85,6 +96,7 @@ body {
 
 .people {
   margin-top: 2.5rem;
+  width: 100%;
 }
 
 .label {
@@ -114,5 +126,8 @@ body {
   border: none;
   border-radius: 5px;
   text-align: center;
+  /* &:not(:last-child) {
+    padding-inline: 3rem;
+  } */
 }
 /*# sourceMappingURL=main.css.map */

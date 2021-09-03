@@ -1,13 +1,17 @@
 .container {
   background-color: orangered;
   height: 100vh;
-  width: max-content;
 
   display: flex;
   align-items: center;
 }
 
 .app {
+  width: min-content;
   background-color: $color-white;
   border-radius: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
 }
