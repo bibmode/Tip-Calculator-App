@@ -5,6 +5,10 @@
   flex-direction: column;
   align-items: center;
   margin-top: 4rem;
+
+  @include respond(phone) {
+    margin-top: 0;
+  }
 }
 
 .app {
@@ -14,7 +18,20 @@
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
 
   box-shadow: 0 2rem 3.5rem rgba($color: #000000, $alpha: 0.07);
+
+  @include respond(tablet) {
+    width: 90%;
+  }
+
+  @include respond(tablet-sm) {
+    grid-template-columns: 1fr;
+    width: 85vw;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
 }

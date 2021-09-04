@@ -10,9 +10,12 @@
 // LEFT
 
 .left {
-  width: 43rem;
   padding: 3rem 3.5rem;
   padding-bottom: 4rem;
+
+  @include respond(tablet-sm) {
+    padding-bottom: 0.5rem;
+  }
 }
 
 .input {
@@ -42,7 +45,7 @@
     //width: fit-content;
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(3, calc((43rem / 3) - (1.6rem * 2)));
+    grid-template-columns: repeat(3, calc((44rem / 3) - (1.6rem * 2)));
     grid-template-rows: repeat(2, min-content);
     grid-gap: 1.2rem;
     margin-block: 1.2rem;
@@ -51,6 +54,26 @@
 
     & > * {
       font-size: $font-input;
+
+      @include respond(tablet) {
+        font-size: 1.9rem;
+      }
+
+      @include respond(tablet-sm) {
+        font-size: $font-input;
+      }
+    }
+
+    @include respond(tablet) {
+      grid-template-columns: repeat(3, calc((43vw / 3) - (1.6rem * 2)));
+    }
+
+    @include respond(tablet-sm) {
+      grid-template-columns: repeat(3, calc((85vw / 3) - (1.6rem * 2)));
+    }
+
+    @include respond(phone) {
+      grid-template-columns: repeat(2, calc((90vw / 2) - 1.6rem));
     }
   }
 
@@ -80,6 +103,15 @@
 
   &__custom {
     box-sizing: border-box;
+
+    @include respond(tablet) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(tablet-sm) {
+      font-size: $font-input;
+    }
+
     &:active,
     &:focus {
       @include addBorder;
@@ -114,13 +146,17 @@
 
 .right {
   background-color: $color-dark-cyan;
-  width: 38rem;
   display: flex;
   flex-direction: column;
   margin: 2.5rem;
   margin-left: 0;
   border-radius: 1.8rem;
   padding: 3.8rem 3.5rem;
+
+  @include respond(tablet-sm) {
+    margin-left: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
 }
 
 .results {
@@ -128,6 +164,10 @@
   grid-template-columns: max-content 1fr;
   grid-gap: 2rem;
   align-items: center;
+
+  @include respond(tablet-sm) {
+    padding-bottom: 3.5rem;
+  }
 }
 
 .amount {

@@ -30,3 +30,23 @@ $font-family-main: "Space Mono", monospace;
     color: $color-dark-cyan;
   }
 }
+
+@mixin respond($breakpoint) {
+  @if ($breakpoint == tablet) {
+    @media only screen and (max-width: 56.75em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == tablet-sm) {
+    @media only screen and (max-width: 42.25em) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == phone) {
+    @media only screen and (max-width: 28.81em) {
+      @content;
+    }
+  }
+}

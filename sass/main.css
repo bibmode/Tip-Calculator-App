@@ -3,16 +3,19 @@
 *::after {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-height: 100vh;
   height: 100%;
   font-family: "Space Mono", monospace;
@@ -44,6 +47,12 @@ body {
   margin-top: 4rem;
 }
 
+@media only screen and (max-width: 28.81em) {
+  .container {
+    margin-top: 0;
+  }
+}
+
 .app {
   width: 84.7rem;
   background-color: white;
@@ -52,9 +61,29 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
   -webkit-box-shadow: 0 2rem 3.5rem rgba(0, 0, 0, 0.07);
           box-shadow: 0 2rem 3.5rem rgba(0, 0, 0, 0.07);
+}
+
+@media only screen and (max-width: 56.75em) {
+  .app {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 42.25em) {
+  .app {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 28.81em) {
+  .app {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
 }
 
 .logo {
@@ -63,9 +92,14 @@ body {
 }
 
 .left {
-  width: 43rem;
   padding: 3rem 3.5rem;
   padding-bottom: 4rem;
+}
+
+@media only screen and (max-width: 42.25em) {
+  .left {
+    padding-bottom: 0.5rem;
+  }
 }
 
 .input__field {
@@ -88,8 +122,8 @@ body {
   overflow: hidden;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (calc((43rem / 3) - (1.6rem * 2)))[3];
-      grid-template-columns: repeat(3, calc((43rem / 3) - (1.6rem * 2)));
+  -ms-grid-columns: (calc((44rem / 3) - (1.6rem * 2)))[3];
+      grid-template-columns: repeat(3, calc((44rem / 3) - (1.6rem * 2)));
   -ms-grid-rows: (min-content)[2];
       grid-template-rows: repeat(2, -webkit-min-content);
       grid-template-rows: repeat(2, min-content);
@@ -102,6 +136,39 @@ body {
 
 .tips__container > * {
   font-size: 2.4rem;
+}
+
+@media only screen and (max-width: 56.75em) {
+  .tips__container > * {
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 42.25em) {
+  .tips__container > * {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 56.75em) {
+  .tips__container {
+    -ms-grid-columns: (calc((43vw / 3) - (1.6rem * 2)))[3];
+        grid-template-columns: repeat(3, calc((43vw / 3) - (1.6rem * 2)));
+  }
+}
+
+@media only screen and (max-width: 42.25em) {
+  .tips__container {
+    -ms-grid-columns: (calc((85vw / 3) - (1.6rem * 2)))[3];
+        grid-template-columns: repeat(3, calc((85vw / 3) - (1.6rem * 2)));
+  }
+}
+
+@media only screen and (max-width: 28.81em) {
+  .tips__container {
+    -ms-grid-columns: (calc((90vw / 2) - 1.6rem))[2];
+        grid-template-columns: repeat(2, calc((90vw / 2) - 1.6rem));
+  }
 }
 
 .tips__option--green {
@@ -142,6 +209,18 @@ body {
           box-sizing: border-box;
 }
 
+@media only screen and (max-width: 56.75em) {
+  .tips__custom {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 42.25em) {
+  .tips__custom {
+    font-size: 2.4rem;
+  }
+}
+
 .tips__custom:active, .tips__custom:focus {
   border: 0.2rem solid #26c0ab;
   margin: -0.2rem;
@@ -166,7 +245,6 @@ body {
 
 .right {
   background-color: #00494d;
-  width: 38rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,6 +258,13 @@ body {
   padding: 3.8rem 3.5rem;
 }
 
+@media only screen and (max-width: 42.25em) {
+  .right {
+    margin-left: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
 .results {
   display: -ms-grid;
   display: grid;
@@ -190,6 +275,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 42.25em) {
+  .results {
+    padding-bottom: 3.5rem;
+  }
 }
 
 .amount__label {
