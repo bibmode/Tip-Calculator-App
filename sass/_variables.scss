@@ -12,3 +12,20 @@ $font-input: 2.4rem;
 $font-labels: 1.4rem;
 
 $font-family-main: "Space Mono", monospace;
+
+@mixin addBorder {
+  border: 0.2rem solid $color-strong-cyan;
+}
+
+@mixin activeButton {
+  &:hover {
+    background-color: $color-strong-cyan;
+    color: $color-dark-cyan;
+    filter: brightness(125%) saturate(50%);
+  }
+
+  &:active {
+    filter: brightness(100%) saturate(100%);
+    color: $color-dark-cyan;
+  }
+}

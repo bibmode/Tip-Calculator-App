@@ -10,7 +10,7 @@
   font-weight: 700;
   color: $color-dark-cyan;
   width: 100%;
-  padding: 0.3rem 1rem;
+  padding: 0.5rem 1rem;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -24,6 +24,7 @@
   border: none;
   border-radius: 5px;
   text-align: center;
+  padding-block: 0.6rem;
 
   /* &:not(:last-child) {
     padding-inline: 3rem;

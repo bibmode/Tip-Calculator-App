@@ -30,7 +30,6 @@ body {
 }
 
 .container {
-  background-color: orangered;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,10 +55,20 @@ body {
 .left {
   width: 30vw;
   padding: 3rem 3.5rem;
+  padding-bottom: 4rem;
 }
 
 .input__field {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.input__field:active {
+  border: 0.2rem solid #26c0ab;
+  margin-bottom: calc(3rem - 0.4rem);
+}
+
+.tips {
+  z-index: 10;
 }
 
 .tips__container {
@@ -78,6 +87,7 @@ body {
   margin-block: 1.2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding-bottom: 0.2rem;
 }
 
 .tips__container > * {
@@ -87,6 +97,19 @@ body {
 .tips__option--green {
   background-color: #00494d;
   color: white;
+}
+
+.tips__option--green:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+  -webkit-filter: brightness(125%) saturate(50%);
+          filter: brightness(125%) saturate(50%);
+}
+
+.tips__option--green:active {
+  -webkit-filter: brightness(100%) saturate(100%);
+          filter: brightness(100%) saturate(100%);
+  color: #00494d;
 }
 
 .tips__option--cyan {
@@ -99,14 +122,30 @@ body {
   color: #5e7a7d;
 }
 
+.tips__custom {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.tips__custom:active {
+  border: 0.2rem solid #26c0ab;
+  margin: -0.2rem;
+}
+
 .people {
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   width: 100%;
+  z-index: 1;
+}
+
+.people__field:active {
+  border: 0.2rem solid #26c0ab;
+  margin: -0.2rem;
 }
 
 .right {
   background-color: #00494d;
-  width: 30vw;
+  width: 38rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,10 +153,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 3rem;
+  margin: 2.5rem 2.8rem;
   margin-left: 0;
   border-radius: 1.8rem;
-  padding: 2.5rem 3.5rem;
+  padding: 3.8rem 3.5rem;
 }
 
 .results {
@@ -144,13 +183,26 @@ body {
 .amount__number {
   color: #26c0ab;
   text-align: right;
-  font-size: 3.5rem;
+  font-size: 3.9rem;
 }
 
 .reset {
   text-transform: uppercase;
   font-size: 2rem;
   margin-top: auto;
+}
+
+.reset:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+  -webkit-filter: brightness(125%) saturate(50%);
+          filter: brightness(125%) saturate(50%);
+}
+
+.reset:active {
+  -webkit-filter: brightness(100%) saturate(100%);
+          filter: brightness(100%) saturate(100%);
+  color: #00494d;
 }
 
 .label {
@@ -165,7 +217,7 @@ body {
   font-weight: 700;
   color: #00494d;
   width: 100%;
-  padding: 0.3rem 1rem;
+  padding: 0.5rem 1rem;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -179,6 +231,7 @@ body {
   border: none;
   border-radius: 5px;
   text-align: center;
+  padding-block: 0.6rem;
   /* &:not(:last-child) {
     padding-inline: 3rem;
   } */
