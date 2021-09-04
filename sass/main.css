@@ -357,6 +357,10 @@ body {
   color: #00494d;
 }
 
+.error-msg {
+  float: right;
+}
+
 .label {
   font-size: 1.4rem;
   color: #5e7a7d;
