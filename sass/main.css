@@ -17,7 +17,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 100vh;
-  height: 100%;
   font-family: "Space Mono", monospace;
   line-height: 1.6;
   background-color: #c5e4e7;
@@ -47,9 +46,21 @@ body {
   margin-top: 4rem;
 }
 
-@media only screen and (max-width: 28.81em) {
+@media only screen and (max-width: 42.25em) {
   .container {
     margin-top: 0;
+    margin-bottom: 4rem;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    min-width: 0;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 28.81em) {
+  .container {
+    margin-bottom: 0;
   }
 }
 
@@ -81,8 +92,14 @@ body {
 
 @media only screen and (max-width: 28.81em) {
   .app {
-    width: 100%;
-    margin-bottom: 5rem;
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 2rem 2rem 0 0;
   }
 }
 
@@ -226,6 +243,12 @@ body {
   margin: -0.2rem;
 }
 
+@media only screen and (max-width: 42.25em) {
+  .tips__custom:active, .tips__custom:focus {
+    margin: 0;
+  }
+}
+
 .people {
   margin-top: 3rem;
   width: 100%;
@@ -265,6 +288,17 @@ body {
   }
 }
 
+@media only screen and (max-width: 28.81em) {
+  .right {
+    margin: 0;
+    width: 88vw;
+    margin-block: 3rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-inline: 2.5rem;
+  }
+}
+
 .results {
   display: -ms-grid;
   display: grid;
@@ -280,6 +314,12 @@ body {
 @media only screen and (max-width: 42.25em) {
   .results {
     padding-bottom: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 28.81em) {
+  .results {
+    grid-gap: 1rem;
   }
 }
 

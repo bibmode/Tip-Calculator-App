@@ -6,8 +6,16 @@
   align-items: center;
   margin-top: 4rem;
 
-  @include respond(phone) {
+  @include respond(tablet-sm) {
     margin-top: 0;
+    margin-bottom: 4rem;
+    height: min-content;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 0;
   }
 }
 
@@ -31,7 +39,10 @@
   }
 
   @include respond(phone) {
-    width: 100%;
-    margin-bottom: 5rem;
+    width: 100vw;
+    //margin-bottom: 5rem;
+    justify-content: center;
+    height: fit-content;
+    border-radius: 2rem 2rem 0 0;
   }
 }

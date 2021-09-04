@@ -116,6 +116,9 @@
     &:focus {
       @include addBorder;
       margin: -0.2rem;
+      @include respond(tablet-sm) {
+        margin: 0;
+      }
     }
   }
 }
@@ -157,6 +160,14 @@
     margin-left: 2.5rem;
     padding-bottom: 2.5rem;
   }
+
+  @include respond(phone) {
+    margin: 0;
+    width: 88vw;
+    margin-block: 3rem;
+    justify-self: center;
+    padding-inline: 2.5rem;
+  }
 }
 
 .results {
@@ -167,6 +178,10 @@
 
   @include respond(tablet-sm) {
     padding-bottom: 3.5rem;
+  }
+
+  @include respond(phone) {
+    grid-gap: 1rem;
   }
 }
 
