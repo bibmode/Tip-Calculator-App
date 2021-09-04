@@ -75,9 +75,9 @@ body {
   margin-bottom: 3rem;
 }
 
-.input__field:active {
+.input__field:active, .input__field:focus {
   border: 0.2rem solid #26c0ab;
-  margin-bottom: calc(3rem - 0.4rem);
+  margin-bottom: calc(3rem - 0.2rem);
 }
 
 .tips {
@@ -112,13 +112,18 @@ body {
 .tips__option--green:hover {
   background-color: #26c0ab;
   color: #00494d;
-  -webkit-filter: brightness(125%) saturate(50%);
-          filter: brightness(125%) saturate(50%);
+  -webkit-filter: brightness(130%) saturate(40%);
+          filter: brightness(130%) saturate(40%);
 }
 
 .tips__option--green:active {
   -webkit-filter: brightness(100%) saturate(100%);
           filter: brightness(100%) saturate(100%);
+  color: #00494d;
+}
+
+.tips__option--green:focus {
+  background-color: #26c0ab;
   color: #00494d;
 }
 
@@ -137,7 +142,7 @@ body {
           box-sizing: border-box;
 }
 
-.tips__custom:active {
+.tips__custom:active, .tips__custom:focus {
   border: 0.2rem solid #26c0ab;
   margin: -0.2rem;
 }
@@ -154,7 +159,7 @@ body {
   background-position: 1.5rem;
 }
 
-.people__field:active {
+.people__field:active, .people__field:focus {
   border: 0.2rem solid #26c0ab;
   margin: -0.2rem;
 }
@@ -211,8 +216,8 @@ body {
 .reset:hover {
   background-color: #26c0ab;
   color: #00494d;
-  -webkit-filter: brightness(125%) saturate(50%);
-          filter: brightness(125%) saturate(50%);
+  -webkit-filter: brightness(130%) saturate(40%);
+          filter: brightness(130%) saturate(40%);
 }
 
 .reset:active {
@@ -252,5 +257,16 @@ body {
   /* &:not(:last-child) {
     padding-inline: 3rem;
   } */
+}
+
+.tip-pick {
+  background-color: #26c0ab;
+  -webkit-filter: brightness(100%) saturate(100%);
+          filter: brightness(100%) saturate(100%);
+  color: #00494d;
+}
+
+.focus-error {
+  border: 0.2rem solid #ee5c2f;
 }
 /*# sourceMappingURL=main.css.map */

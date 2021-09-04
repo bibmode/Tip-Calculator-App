@@ -29,7 +29,12 @@
       <div class="app">
         <div class="left">
           <h3 class="input__label label">Bill</h3>
-          <input type="text" id="user-input" class="input__field field" />
+          <input
+            type="text"
+            id="user-input"
+            class="input__field field"
+            placeholder="0"
+          />
 
           <div class="tips">
             <h3 class="tips__label label">Select Tip %</h3>
@@ -50,7 +55,7 @@
 
           <div class="people">
             <h3 class="people__label label">Number of People</h3>
-            <input type="text" class="people__field field" />
+            <input type="text" class="people__field field" placeholder="0" />
           </div>
         </div>
 
@@ -59,14 +64,16 @@
             <h3 class="amount__label">
               Tip Amount <span class="amount__label--span"><br />/ person</span>
             </h3>
-            <h2 class="amount__number">$0.00</h2>
+            <h2 class="amount__number" id="tip-amount"><span>$</span>0.00</h2>
             <h3 class="amount__label">
               Total <span class="amount__label--span"><br />/ person</span>
             </h3>
-            <h2 class="amount__number">$0.00</h2>
+            <h2 class="amount__number" id="total-amount"><span>$</span>0.00</h2>
           </div>
 
-          <button class="reset tips__option--cyan tip">reset</button>
+          <button class="reset tips__option--cyan tip" id="reset-button">
+            reset
+          </button>
         </div>
       </div>
     </main>

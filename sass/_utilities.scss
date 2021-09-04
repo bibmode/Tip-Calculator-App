@@ -31,3 +31,13 @@
     padding-inline: 3rem;
   } */
 }
+
+.tip-pick {
+  background-color: $color-strong-cyan;
+  filter: brightness(100%) saturate(100%);
+  color: $color-dark-cyan;
+}
+
+.focus-error {
+  border: 0.2rem solid $color-error;
+}

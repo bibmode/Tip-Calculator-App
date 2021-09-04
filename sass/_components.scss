@@ -25,9 +25,10 @@
     background-position: 1.5rem;
     margin-bottom: 3rem;
 
-    &:active {
+    &:active,
+    &:focus {
       @include addBorder;
-      margin-bottom: calc(3rem - 0.4rem);
+      margin-bottom: calc(3rem - 0.2rem);
     }
   }
 }
@@ -59,6 +60,11 @@
       color: $color-white;
 
       @include activeButton;
+
+      &:focus {
+        background-color: $color-strong-cyan;
+        color: $color-dark-cyan;
+      }
     }
 
     &--cyan {
@@ -74,7 +80,8 @@
 
   &__custom {
     box-sizing: border-box;
-    &:active {
+    &:active,
+    &:focus {
       @include addBorder;
       margin: -0.2rem;
     }
@@ -94,7 +101,8 @@
     background-repeat: no-repeat;
     background-position: 1.5rem;
 
-    &:active {
+    &:active,
+    &:focus {
       @include addBorder;
       margin: -0.2rem;
     }
