@@ -20,6 +20,9 @@
   }
 
   &__field {
+    background-image: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 1.5rem;
     margin-bottom: 3rem;
 
     &:active {
@@ -87,6 +90,10 @@
   }
 
   &__field {
+    background-image: url(../images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 1.5rem;
+
     &:active {
       @include addBorder;
       margin: -0.2rem;
