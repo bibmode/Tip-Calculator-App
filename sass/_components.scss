@@ -65,7 +65,7 @@
     }
 
     @include respond(tablet) {
-      grid-template-columns: repeat(3, calc((43vw / 3) - (1.6rem * 2)));
+      grid-template-columns: repeat(3, calc((45vw / 3) - (1.6rem * 2)));
     }
 
     @include respond(tablet-sm) {
