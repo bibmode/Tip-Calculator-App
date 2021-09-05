@@ -29,7 +29,9 @@
       <div class="app">
         <div class="left">
           <h3 class="input__label label">
-            Bill<span class="input__error-msg error-msg">Can't be zero</span>
+            Bill<span class="input__error-msg error-msg error-msg--1"
+              >Can't be zero</span
+            >
           </h3>
           <input
             type="text"
@@ -39,7 +41,11 @@
           />
 
           <div class="tips">
-            <h3 class="tips__label label">Select Tip %</h3>
+            <h3 class="tips__label label">
+              Select Tip %<span class="tip__error-msg error-msg error-msg--3"
+                >Can't be zero</span
+              >
+            </h3>
 
             <div class="tips__container">
               <button class="tips__option tips__option--green tip">5%</button>
@@ -58,7 +64,9 @@
           <div class="people">
             <h3 class="people__label label">
               Number of People
-              <span class="people__error-msg error-msg">Can't be zero</span>
+              <span class="people__error-msg error-msg error-msg--2"
+                >Can't be zero</span
+              >
             </h3>
             <input type="text" class="people__field field" placeholder="0" />
           </div>

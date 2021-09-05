@@ -211,4 +211,17 @@
 
 .error-msg {
   float: right;
+  color: $color-error;
+
+  &--1 {
+    display: none;
+  }
+
+  &--2 {
+    display: none;
+  }
+
+  &--3 {
+    display: none;
+  }
 }

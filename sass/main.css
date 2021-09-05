@@ -31,6 +31,10 @@ body {
           justify-content: center;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   height: 100vh;
   display: -webkit-box;
@@ -359,6 +363,19 @@ body {
 
 .error-msg {
   float: right;
+  color: #ee5c2f;
+}
+
+.error-msg--1 {
+  display: none;
+}
+
+.error-msg--2 {
+  display: none;
+}
+
+.error-msg--3 {
+  display: none;
 }
 
 .label {
